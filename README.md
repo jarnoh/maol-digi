@@ -1,7 +1,7 @@
 
 # maol-digi
 
-This extracts full MAOL formula book from digbi image.
+This extracts full MAOL formula book from digabi image.
 
 ```
 docker build -t maol-digi .
