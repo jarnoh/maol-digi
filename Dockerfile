@@ -7,7 +7,7 @@ WORKDIR /work
 RUN wget -c http://static.abitti.fi/etcher-usb/koe-etcher.zip && \
  7z x -y koe-etcher.zip ytl/koe.img && rm koe-etcher.zip && \
  7z x -aou ytl/koe.img && rm ytl/koe.img && \
- 7z x primary_1.img live/filesystem.squashfs && rm primary*.img && \
+ 7z x 1.primary.fat live/filesystem.squashfs && rm *.primary.* && \
  7z x live/filesystem.squashfs usr/local/share/maol-digi && rm live/filesystem.squashfs
 
 FROM nginx
